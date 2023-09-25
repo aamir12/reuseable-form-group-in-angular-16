@@ -1,0 +1,26 @@
+<!-- Solution 1 -->
+<!-- <ng-container [formGroup]="form">
+  <div formGroupName="deliveryAddress">
+    <div class="mb-3">
+      <label class="form-label">Zip Code</label>
+      <input type="text" class="form-control" formControlName="zipcode" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Street</label>
+      <input type="text" class="form-control" formControlName="street" />
+    </div>
+  </div>
+</ng-container> -->
+<fieldset class="border p-4 mb-4 rounded">
+  <legend *ngIf="title">{{ title }}</legend>
+  <div [formGroupName]="controlKey">
+    <div class="mb-3">
+      <label class="form-label">Zip Code</label>
+      <input type="text" class="form-control" formControlName="zipCode" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Street</label>
+      <input type="text" class="form-control" formControlName="street" />
+    </div>
+  </div>
+</fieldset>
