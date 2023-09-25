@@ -26,6 +26,7 @@ export class AddressGroupComponent implements OnInit, OnDestroy {
 
   @Input({ required: true }) controlKey = '';
   @Input() title = '';
+
   constructor() {}
 
   parentContainer = inject(ControlContainer);

@@ -15,6 +15,7 @@ import { AddressGroupComponent } from './address-group/address-group.component';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, AddressGroupComponent],
   templateUrl: './main.html',
+  styleUrls: ['./main.css'],
 })
 export class App {
   form: FormGroup = this.fb.group({
